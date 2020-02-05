@@ -14,12 +14,12 @@
     $j = $i;
   }
   $j++;
-  echo "La dernière semaine de Stage pour le groupe 19001 est la semaine.$j<br>";
+  echo "La dernière semaine de Stage pour le groupe 19001 est la semaine ".$j."<br>";
 // Avec une fonction
 $aInverse = array_reverse($a["19001"], TRUE);
 $iPosition = array_search("Stage", $aInverse);
 $iPosition++;
-echo "La dernière semaine de Stage pour le groupe 19001 est la semaine.$iPosition.<br>";
+echo "La dernière semaine de Stage pour le groupe 19001 est la semaine ".$iPosition."<br>";
   ?> 
 </body>
 </html>
