@@ -3,11 +3,11 @@
 function verif()
 {
     // Déclaration de mes regex
-    $alpha = " /(^[a-zA-Zéèêëôœîïûüàáâæç-]+$)/ ";
+    $alpha = " /(^[a-zA-Zéèêëôœîïûüàáâæç\ -]+$)/ ";
     $mail = " /(^[\w\.-]+@[a-z]+[\.]{1}[a-z]{2,3}$)/ ";
     $cp = " /(^[0-9]{5}$)|^$/ ";
-    $adr = " /(^[0-9]+[a-zA-Z-\s]+$)|^$/ ";
-    $city =  " /(^[A-Z]+[a-zA-Zéèêëôœîïûüàáâæç-]+$)|^$/ ";
+    $adr = " /(^[0-9]+[a-zA-Z\ -]+$)|^$/ ";
+    $city =  " /(^[A-Z]+[a-zA-Zéèêëôœîïûüàáâæç\ -]+$)|^$/ ";
     // Récupération des valeurs du formulaire en fonction de leurs ID
     $nom = $_POST["nom"];
     $prenom = $_POST["prenom"];
